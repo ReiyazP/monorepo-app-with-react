@@ -1,0 +1,34 @@
+{
+  "name": "monorepo-app-with-react",
+  "version": "1.0.0",
+  "description": "Attempt to build Monorepo Microfrontend template with decoupled root and multiple react applications",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReiyazP/monorepo-app-with-react.git"
+  },
+  "workspaces": {
+    "packages": [
+      "libs",
+      "root",
+      "./apps/home",
+      "./apps/contact"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ReiyazP/monorepo-app-with-react/issues"
+  },
+  "homepage": "https://github.com/ReiyazP/monorepo-app-with-react#readme",
+  "devDependencies": {
+    "concurrently": "^7.4.0"
+  }
+}
